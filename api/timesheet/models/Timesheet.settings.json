@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "timesheets",
+  "info": {
+    "name": "timesheet",
+    "description": "Users time sheets."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "status": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "decimal"
+    },
+    "task": {
+      "model": "task",
+      "via": "timeSheet"
+    },
+    "user": {
+      "model": "user",
+      "via": "timeSheets",
+      "plugin": "users-permissions"
+    }
+  }
+}

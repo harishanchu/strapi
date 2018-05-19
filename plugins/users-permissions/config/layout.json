@@ -1,0 +1,15 @@
+{
+  "user": {
+    "attributes": {
+      "name": {
+        "appearance": ""
+      },
+      "dob": {
+        "appearance": ""
+      },
+      "gender": {
+        "appearance": ""
+      }
+    }
+  }
+}

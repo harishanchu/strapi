@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/timesheet",
+      "handler": "Timesheet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timesheet/:id",
+      "handler": "Timesheet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/timesheet",
+      "handler": "Timesheet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/timesheet/:id",
+      "handler": "Timesheet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/timesheet/:id",
+      "handler": "Timesheet.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/timesheet/:id/relationships/:relation",
+      "handler": "Timesheet.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/timesheet/:id/relationships/:relation",
+      "handler": "Timesheet.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/timesheet/:id/relationships/:relation",
+      "handler": "Timesheet.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

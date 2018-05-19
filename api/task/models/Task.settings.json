@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "tasks",
+  "info": {
+    "name": "task",
+    "description": "Tasks of a user."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    },
+    "project": {
+      "model": "project",
+      "via": "tasks"
+    },
+    "user": {
+      "model": "user",
+      "via": "task",
+      "plugin": "users-permissions"
+    },
+    "timeSheet": {
+      "model": "timesheet",
+      "via": "task"
+    }
+  }
+}

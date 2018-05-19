@@ -1,0 +1,42 @@
+{
+  "client": {
+    "attributes": {
+      "name": {
+        "appearance": ""
+      },
+      "Description": {
+        "appearance": ""
+      }
+    }
+  },
+  "project": {
+    "attributes": {
+      "name": {
+        "appearance": ""
+      },
+      "description": {
+        "appearance": ""
+      }
+    }
+  },
+  "task": {
+    "attributes": {
+      "comment": {
+        "appearance": ""
+      },
+      "status": {
+        "appearance": ""
+      }
+    }
+  },
+  "timeSheet": {
+    "attributes": {
+      "status": {
+        "appearance": ""
+      },
+      "duration": {
+        "appearance": ""
+      }
+    }
+  }
+}
